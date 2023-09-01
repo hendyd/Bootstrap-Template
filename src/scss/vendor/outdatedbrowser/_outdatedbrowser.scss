@@ -1,0 +1,69 @@
+/*!--------------------------------------------------------------------
+STYLES "Outdated Browser"
+Version:    1.1.2 - 2015
+author:     Burocratik
+website:    http://www.burocratik.com
+* @preserve
+-----------------------------------------------------------------------*/
+#outdated {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: rem(220);
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 1500;
+	background-color: $danger;
+	color: $white;
+	h6 {
+		font-size: rem(25);
+		line-height: divide(35, 25);
+		margin: rem(30 0 10);
+	}
+	p {
+		font-size: rem(12);
+		line-height: divide(30, 12);
+		margin: 0;
+	}
+	#btnUpdateBrowser {
+		display: block;
+		position: relative;
+		padding: rem(10 20);
+		margin: rem(30) auto 0;
+		width: rem(230); /*need for IE*/
+		color: $white;
+		text-decoration: none;
+		border: rem(2) solid $white;
+		cursor: pointer;
+		&:hover {
+			color: lighten($danger, 20%);
+			background-color: $white;
+		}
+	}
+	.last {
+		position: absolute;
+		top: rem(10);
+		right: rem(25);
+		width: rem(20);
+		height: rem(20);
+		&[dir="rtl"] {
+			right: auto !important;
+			left: rem(25) !important;
+		}
+	}
+	#btnCloseUpdateBrowser {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		color: $white;
+		font-size: rem(36);
+		line-height: divide(46, 36);
+	}
+	* html & {
+		position: absolute;
+	}
+}

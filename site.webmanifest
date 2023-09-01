@@ -1,0 +1,21 @@
+{
+	"name": "COMPANY NAME | PAGE TITLE",
+	"short_name": "PAGE TITLE",
+	"theme_color": "PRIMARY COLOUR",
+	"background_color": "SECONDARY COLOUR",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "/android-icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"density": "4.0"
+		},
+		{
+			"src": "/android-icon-500x500.png",
+			"sizes": "500x500",
+			"type": "image/png",
+			"density": "8.0"
+		}
+	]
+}

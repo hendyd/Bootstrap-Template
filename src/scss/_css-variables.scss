@@ -1,0 +1,12 @@
+:root {
+	@each $bp, $value in $grid-breakpoints {
+		--#{$prefix}breakpoint-#{$bp}: #{$value};
+	}
+
+	--#{$prefix}font-weight-lighter: #{$font-weight-lighter};
+	--#{$prefix}font-weight-light: #{$font-weight-light};
+	--#{$prefix}font-weight-normal: #{$font-weight-normal};
+	--#{$prefix}font-weight-semibold: #{$font-weight-semibold};
+	--#{$prefix}font-weight-bold: #{$font-weight-bold};
+	--#{$prefix}font-weight-bolder: #{$font-weight-bolder};
+}

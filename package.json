@@ -1,0 +1,39 @@
+{
+	"name": "blank-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"gulp": "gulp",
+		"gulp:watch": "npm run build && gulp watch",
+		"gulp:production": "gulp production",
+		"prebuild": "rm -rf ./dist",
+		"build": "npm run gulp",
+		"build:production": "npm run gulp:production",
+		"start": "concurrently --kill-others \"npm run server\" \"npm run gulp:watch\"",
+		"server": "php -S 127.0.0.1:8888",
+		"preproduction": "npm run build:production",
+		"production": "php -S 127.0.0.1:8888"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.14",
+		"bootstrap": "^5.2.3",
+		"bootstrap-icons": "^1.10.5",
+		"browser-sync": "^2.29.1",
+		"concurrently": "^8.0.1",
+		"cssnano": "^6.0.1",
+		"dart-sass": "^1.25.0",
+		"gulp": "^4.0.2",
+		"gulp-changed": "^4.0.3",
+		"gulp-flatten": "^0.4.0",
+		"gulp-include": "^2.4.1",
+		"gulp-minify": "^3.1.0",
+		"gulp-postcss": "^9.0.1",
+		"gulp-rename": "^2.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"postcss": "^8.4.23"
+	}
+}
