@@ -1,3 +1,8 @@
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
 // scss-docs-start grid-breakpoints
 $grid-breakpoints: (
 	xs: 0,
@@ -6,7 +11,6 @@ $grid-breakpoints: (
 	lg: 992px,
 	xl: 1200px,
 	xxl: 1400px,
-	xxxl: 1600px,
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -24,7 +28,6 @@ $container-max-widths: (
 	lg: 960px,
 	xl: 1140px,
 	xxl: 1320px,
-	xxxl: 1570px,
 ) !default;
 // scss-docs-end container-max-widths
 
