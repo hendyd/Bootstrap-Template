@@ -14,26 +14,13 @@ function getScrollDistance() {
 	}
 }
 
-$(window).on("load", function () {
-	$("body").addClass("loaded");
-	getScrollDistance();
-	outdatedBrowser({
-		bgColor: "#f25648",
-		color: "#ffffff",
-		lowerThan: "transform",
-	});
-});
-
 // detect a scroll
 window.onscroll = function () {
 	getScrollDistance();
 };
 
-// navigation toggle
-const navigationToggle = document.getElementById("navigation-toggle");
-if (navigationToggle !== null) {
-	navigationToggle.addEventListener("click", event => {
-		event.preventDefault();
-		document.body.classList.toggle("menu-open");
-	});
-}
+// detect loaded and scroll position
+window.onload = function () {
+	document.body.classList.add("loaded");
+	getScrollDistance();
+};
